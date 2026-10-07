@@ -1,0 +1,1252 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    border: 4px solid #413333;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: #fff;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.logo > a:link {
+    color: #1b4d3e;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navigation a:link {
+    font-size: 18px;
+    color: #413333;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    font-size: 18px;
+    color: #CC6F00;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #1b4d3e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.hero-h3 {
+    background-color: #F2A900;
+    padding: 10px;
+    width: 250px;
+
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.hero-h1 {
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+    width: 600px;
+}
+
+.hero-p {
+    color: #fff;
+    font-size: 24px;
+    width: 600px;
+    line-height: 1.5;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-one {
+    background-color: #1b4d3e;
+    color: #fff;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-two {
+    color: #fff;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    text-decoration: none;
+    margin-top: 10px;
+
+    border: 1px solid #fff;
+}
+
+
+/* =========================
+   INFORMATION SECTION
+========================= */
+
+.info-titles {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 100px 0;
+}
+
+.info-titles h3 {
+    color: #CC6F00;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.info-titles h2 {
+    color: #1b4d3e;
+    font-size: 48px;
+    padding: 10px;
+}
+
+.info-titles p {
+    color: #413333;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   DESTINATION GRID
+========================= */
+
+.info-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 400px);
+
+    column-gap: 20px;
+    row-gap: 40px;
+
+    margin: 20px auto;
+
+    max-width: 1240px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid #fff;
+    background-color: #fff;
+
+    position: relative;
+
+    gap: 10px;
+
+    border-radius: 10px;
+
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
+}
+
+
+/* Card Image */
+
+.card img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* Region Badge */
+
+.card span {
+    position: absolute;
+
+    top: 225px;
+    left: 10px;
+
+    color: #fff;
+    background-color: #1b4d3e;
+
+    font-size: 14px;
+
+    padding: 5px;
+
+    border-radius: 10px;
+}
+
+
+/* Card Title */
+
+.card h3 {
+    color: #1b4d3e;
+
+    font-size: 36px;
+
+    margin: 0 20px;
+}
+
+
+/* Card Description */
+
+.card > p {
+    color: #413333;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin: 0 20px;
+}
+
+
+/* =========================
+   CARD FOOTER
+========================= */
+
+.card-link-star {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 20px 20px;
+}
+
+
+/* Explore Button */
+
+.card-link-star .btn {
+    padding: 5px 10px;
+}
+
+.card-link-star .btn:hover {
+    background-color: #CC6F00;
+}
+
+
+/* Rating */
+
+.card-link-star p {
+    color: #F2A900;
+
+    font-size: 18px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   VISIT SECTION
+========================= */
+
+.visit {
+    background-color: antiquewhite;
+    margin-top: 200px;
+}
+
+.visit-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px;
+    gap: 20px;
+}
+
+.visit-content h3 {
+    color: #CC6F00;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.visit-content h2 {
+    color: #1b4d3e;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.visit-content p {
+    color: #413333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.visit-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.visit-card {
+    width: 250px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid #fff;
+    background-color: #fff;
+
+    align-items: center;
+
+    border-radius: 10px;
+
+    transition: transform 0.3s ease;
+
+    margin-bottom: 100px;
+}
+
+.visit-card:hover {
+    transform: translateY(-8px);
+    border: 1px solid #000;
+}
+
+.visit-card .icon {
+    background-color: #EEEEEE;
+    color: #1b4d3e;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    width: 80px;
+    height: 80px;
+
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+}
+
+.visit-card .icon:hover {
+    background-color: #1b4d3e;
+    color: #EEEEEE;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+}
+
+.visit-card h2 {
+    color: #1b4d3e;
+    padding: 20px;
+}
+
+.visit-card p {
+    font-size: 18px;
+    color: #464858;
+    line-height: 1.5;
+    margin: auto 20px;
+}
+
+
+/* =========================
+   HIGHLIGHT
+========================= */
+
+.highlight {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    max-width: 1200px;
+    height: 600px;
+
+    margin: 100px auto;
+
+    border: 1px solid #DCCFC0;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.highlight-img {
+    width: 100%;
+    height: 100%;
+}
+
+.highlight-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.highlight-content {
+    width: 100%;
+    height: 100%;
+
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight-content h3 {
+    color: #F2A900;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.highlight-content h2 {
+    color: #1b4d3e;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.highlight-content p {
+    color: #413333;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    line-height: 1.5;
+}
+
+.experience-info {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 15px;
+    padding: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-item i {
+    color: #CC6F00;
+    font-size: 20px;
+}
+
+.info-item span {
+    color: #1b4d3e;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.book-btn {
+    background-color: #F2A900;
+    color: #fff;
+
+    width: 300px;
+
+    padding: 20px;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    margin: 20px;
+}
+
+.book-btn i {
+    background-color: #F2A900;
+    color: #fff;
+}
+
+
+/* =========================
+   TRAVEL SECTION
+========================= */
+
+.travel {
+    background-color: antiquewhite;
+    margin-top: 100px;
+}
+
+.travel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 60px 20px;
+}
+
+.travel h3 {
+    color: #F2A900;
+    font-size: 24px;
+}
+
+.travel h2 {
+    color: #1b4d3e;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.travel p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+
+.travel-cards {
+    display: grid;
+
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 350px 350px 350px;
+
+    gap: 25px;
+
+    justify-content: center;
+}
+
+.travel-card {
+    position: relative;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    overflow: hidden;
+}
+
+.travel-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.travel-card-content {
+    position: absolute;
+
+    top: 45%;
+    left: 25px;
+}
+
+.travel-card span {
+    color: #1b4d3e;
+    background-color: #CC6F00;
+
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+.travel-card h3 {
+    color: #fff;
+
+    font-size: 36px;
+
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+.travel-card p {
+    color: #fff;
+
+    padding: 5px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.gallery-content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.gallery-content h3 {
+    color: #F2A900;
+    font-size: 24px;
+}
+
+.gallery-content h2 {
+    color: #1b4d3e;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.gallery-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    color: #464858;
+}
+
+
+/* =========================
+   GALLERY CARDS
+========================= */
+
+.gallery-cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(3, 250px);
+
+    gap: 15px;
+
+    justify-content: center;
+}
+
+
+/* =========================
+   GALLERY CARD
+========================= */
+
+.gallery-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   GALLERY CARD POSITIONS
+========================= */
+
+/*
+    ┌──────────────┬───────┬───────┐
+    │              │ Card2 │ Card3 │
+    │    Card1     ├───────┴───────┤
+    │              │     Card4     │
+    ├──────────────┼───────────────┤
+    │    Card5     │     Card6     │
+    └──────────────┴───────────────┘
+*/
+
+
+/* Large card */
+
+.card-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+
+/* Top right */
+
+.card-2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.card-3 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+
+/* Middle right */
+
+.card-4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+
+/* Bottom left */
+
+.card-5 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+
+/* Bottom right */
+
+.card-6 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+
+/* =========================
+   GALLERY IMAGE
+========================= */
+
+.gallery-card img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: filter 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* =========================
+   GALLERY OVERLAY
+========================= */
+
+.gallery-overlay {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.gallery-card:hover img {
+    filter: brightness(50%);
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+
+/* =========================
+   GALLERY TEXT
+========================= */
+
+.gallery-overlay h4 {
+    color: #fff;
+    font-size: 32px;
+}
+
+.gallery-overlay span {
+    color: #F2A900;
+    font-size: 24px;
+}
+.stat{
+    background-color: #1b4d3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin: auto 80px;
+    gap: 30px;
+    border-radius: 10px;
+}
+.stat1 h3,.stat2 h3,.stat3 h3,.stat4 h3{
+    color: #F2A900;
+    font-size: 48px;
+
+}
+.stat1 p,.stat2 p,.stat3 p,.stat4 p{
+    color: #fff;
+    font-size: 18px;
+}
+
+.visitors{
+    margin-top: 100px;
+}
+.visitors-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.visitors-content h3{
+    color: #F2A900;
+    font-size: 24px;
+}
+.visitors-content h2{
+    color: #1b4d3e;
+    font-size: 46px;
+    font-weight: bold;
+
+}
+.visitors-content p{
+    color: #413333;
+    font-size: 18px;
+    margin-top: 20px;
+}/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 25px;
+
+    margin: 60px auto 100px;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   TESTIMONIAL CARD
+========================= */
+
+.testimonial {
+    width: 300px;
+    min-height: 300px;
+
+    background-color: #fff;
+
+    border: 1px solid #DCCFC0;
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.testimonial:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 6px 8px 15px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   TESTIMONIAL TEXT
+========================= */
+
+.testimonial > p {
+    color: #413333;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PERSON
+========================= */
+
+.test-peop {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: auto;
+}
+
+
+/* =========================
+   PERSON IMAGE
+========================= */
+
+.test-peop img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #F2A900;
+}
+
+
+/* =========================
+   PERSON INFORMATION
+========================= */
+
+.test-peop h3 {
+    color: #1b4d3e;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+
+.test-peop p {
+    color: #666;
+
+    font-size: 14px;
+
+    margin: 0;
+}
+/* =========================
+   PLANNING SECTION
+========================= */
+
+.planning {
+    background-color: #1b4d3e;
+
+    width: calc(100% - 80px);
+    min-height: 650px;
+
+    margin: 100px auto 40px;
+
+    border-radius: 20px;
+
+    padding: 80px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PLANNING LABEL
+========================= */
+
+.planning h4 {
+    background-color: #F2A900;
+    color: #1b4d3e;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PLANNING TITLE
+========================= */
+
+.planning h2 {
+    color: #fff;
+
+    font-size: 60px;
+    line-height: 1.2;
+
+    font-weight: bold;
+
+    max-width: 800px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* =========================
+   PLANNING DESCRIPTION
+========================= */
+
+.planning p {
+    color: #E5D3AF;
+
+    font-size: 20px;
+    line-height: 1.6;
+
+    max-width: 800px;
+
+    margin: 0 auto 35px;
+}
+
+
+/* =========================
+   PLANNING BUTTONS
+========================= */
+
+.planning-btn {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 10px;
+}
+
+
+/* First button */
+
+.planning-btn a:first-child {
+    background-color: #F2A900;
+    color: #1b4d3e;
+
+    padding: 18px 30px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+
+/* Second button */
+
+.planning-btn a:last-child {
+    color: #fff;
+
+    padding: 17px 30px;
+
+    border: 2px solid #E5E5E5;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+.planning-btn a:first-child:hover {
+    background-color: #fff;
+
+    transform: translateY(-3px);
+}
+
+
+.planning-btn a:last-child:hover {
+    background-color: #fff;
+    color: #1b4d3e;
+}
+footer{
+    background-color: #1b4d3e;
+    min-height: 400px;
+    margin-top: 100px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+.explorer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.explorer h2 , .quick-link h2 ,.pop-destination h2, .contact-info h2{
+    color:#fff;
+    font-size: 26px;
+}
+.explorer p{
+    color: #E5D3AF;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.explorer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.explorer-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #1b4d3e;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.explorer-social a:hover {
+    background-color: #CC6F00;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.explorer-social i {
+    font-size: 18px;
+}
+.quick-link{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 15px;
+   
+
+}
+.quick-link a:link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.quick-link a:hover{
+ 
+    color: #F2A900;
+    font-size: 18px;
+}
+.pop-destination{
+     display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 15px;
+}
+.pop-destination a:link{
+     text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.pop-destination a:hover{
+    color: #F2A900;
+    font-size: 18px;
+}
+.contact-info span{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #DCCFC0;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #fff;
+}
+hr{
+    color: gray;
+}
+.foot-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 18px;
+    color: #fff;
+}
