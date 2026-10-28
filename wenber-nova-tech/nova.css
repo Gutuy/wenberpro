@@ -1,0 +1,363 @@
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #03143c;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   HERO BACKGROUND
+========================= */
+.content {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1px 0 80px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(1, 14, 47, 0.2),
+            rgba(1, 14, 47, 0.02)
+        ),
+        url("Assets/photo_2026-10-07_07-41-34.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+.nav {
+    width: 90%;
+    max-width: 1400px;
+    margin: 35px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Logo */
+.nav img {
+    display: block;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Navigation links */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-link a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link a:hover,
+.nav-link a:focus {
+    color: #08baff;
+}
+
+/* Avoid making visited links purple */
+.nav-link a:visited {
+    color: #ffffff;
+}
+
+.nav-link a:visited:hover {
+    color: #08baff;
+}
+
+/* =========================
+   NAVIGATION BUTTONS
+========================= */
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.search-icon {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+
+    transition: background 0.3s ease;
+}
+
+.search-icon:hover {
+    background: #2373f4;
+}
+
+.search-icon i {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.get-started {
+    display: inline-block;
+    padding: 15px 24px;
+
+    color: #ffffff;
+    background: #1672ff;
+    border-radius: 10px;
+
+    font-size: 14px;
+    white-space: nowrap;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.get-started:hover {
+    background: #008fff;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HERO TEXT
+========================= */
+.hero {
+    width: 90%;
+    max-width: 1400px;
+    margin: 105px auto 0;
+}
+
+.hero > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 9px 16px;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+    background: rgba(15, 93, 210, 0.18);
+    border: 1px solid rgba(0, 153, 255, 0.5);
+    border-radius: 30px;
+
+    font-size: 13px;
+}
+
+.hero h2 {
+    max-width: 650px;
+    margin-bottom: 18px;
+
+    color: #ffffff;
+    font-size: clamp(38px, 4.5vw, 64px);
+    font-weight: 750;
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+/* Nova and Tech colors */
+.span1 {
+    color: #08baff;
+}
+
+.span2 {
+    color: #ffbd16;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-bottom: 25px;
+
+    color: #e0e9ff;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   HERO BUTTONS
+========================= */
+.hero-btn {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.hero-btn a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 23px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.hero-btn a:first-child {
+    color: #ffffff;
+    background: #0875ff;
+    border: 1px solid #0875ff;
+}
+
+.hero-btn a:first-child:hover {
+    background: #008fff;
+    transform: translateY(-2px);
+}
+
+/* Secondary button */
+.hero-btn a:last-child {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.hero-btn a:last-child:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+@media (max-width: 1000px) {
+    .nav {
+        width: 92%;
+        gap: 20px;
+    }
+
+    .nav img {
+        width: 125px;
+    }
+
+    .nav-link {
+        gap: 18px;
+    }
+
+    .nav-link a {
+        font-size: 13px;
+    }
+
+    .nav-btn {
+        gap: 12px;
+    }
+
+    .get-started {
+        padding: 13px 16px;
+    }
+
+    .hero {
+        width: 92%;
+        margin-top: 90px;
+    }
+
+    .hero-btn {
+        width: 92%;
+    }
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+@media (max-width: 700px) {
+    .content {
+        min-height: 100vh;
+        padding-bottom: 60px;
+
+        background-position: 62% center;
+    }
+
+    .nav {
+        width: 90%;
+        margin-top: 22px;
+
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav img {
+        width: 115px;
+    }
+
+    .nav-link {
+        width: 100%;
+        order: 3;
+
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .nav-link a {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        margin-left: auto;
+        gap: 10px;
+    }
+
+    .search-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .get-started {
+        padding: 11px 13px;
+        font-size: 12px;
+    }
+
+    .hero {
+        width: 90%;
+        margin-top: 85px;
+    }
+
+    .hero > a {
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    .hero h2 {
+        max-width: 100%;
+        font-size: clamp(34px, 9vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .hero-btn {
+        width: 90%;
+    }
+
+    .hero-btn a {
+        padding: 13px 18px;
+        font-size: 13px;
+    }
+}
